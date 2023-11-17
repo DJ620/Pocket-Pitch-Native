@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "name": "Pocket-Pitch-React-Native",
+    "slug": "Pocket-Pitch-React-Native"
+  }
+}
