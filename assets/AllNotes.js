@@ -39,111 +39,136 @@ import activeG from "./Images/ActiveNotes/G-Button.png";
 import activeGs from "./Images/ActiveNotes/G-Sharp-Button.png";
 import activeC5 from "./Images/ActiveNotes/High-C-Button.png";
 import activeC4 from "./Images/ActiveNotes/Low-C-Button.png";
+import dot from "./Images/Miscellaneous/Little-Dot.png";
+
+import styles from "./noteStyles";
 
 const allNotes = [
     {
       src: C1,
       id: 'audio-C1',
       note: "C4",
-      class: "deg-0 position-C4",
+      style: styles.C1,
       defaultImg: defaultC4,
-      activeImg: activeC4
+      activeImg: activeC4,
+      play: true
     },
     {
       src: Cs,
       id: 'audio-Cs',
       note: "#/b",
-      class: 'deg-45 position-Cs',
+      style: styles.Cs,
       defaultImg: defaultCs,
-      activeImg: activeCs
+      activeImg: activeCs,
+      play: true
     },
     {
       src: D,
       id: 'audio-D',
       note: "D",
-      class: 'deg-90 position-D',
+      style: styles.D,
       defaultImg: defaultD,
-      activeImg: activeD
+      activeImg: activeD,
+      play: true
     },
     {
       src: Ds,
       id: 'audio-Ds',
       note: "#/b",
-      class: 'deg-135 position-Ds',
+      style: styles.Ds,
       defaultImg: defaultDs,
-      activeImg: activeDs
+      activeImg: activeDs,
+      play: true
     },
     {
       src: E,
       id: 'audio-E',
       note: "E",
-      class: 'deg-180 position-E',
+      style: styles.E,
       defaultImg: defaultE,
-      activeImg: activeE
+      activeImg: activeE,
+      play: true
     },
     {
       src: F,
       id: 'audio-F',
       note: "F",
-      class: 'deg-225 position-F',
+      style: styles.F,
       defaultImg: defaultF,
-      activeImg: activeF
+      activeImg: activeF,
+      play: true
     },
     {
       src: Fs,
       id: 'audio-Fs',
       note: "#/b",
-      class: 'deg-270 position-Fs',
+      style: styles.Fs,
       defaultImg: defaultFs,
-      activeImg: activeFs
+      activeImg: activeFs,
+      play: true
     },
     {
       src: G,
       id: 'audio-G',
       note: "G",
-      class: 'deg-315 position-G',
+      style: styles.G,
       defaultImg: defaultG,
-      activeImg: activeG
+      activeImg: activeG,
+      play: true
     },
     {
       src: Gs,
       id: 'audio-Gs',
       note: "#/b",
-      class: 'deg-208 position-Gs',
+      style: styles.Gs,
       defaultImg: defaultGs,
-      activeImg: activeGs
+      activeImg: activeGs,
+      play: true
     },
     {
       src: A,
       id: 'audio-A',
       note: "A",
-      class: 'deg-234 position-A',
+      style: styles.A,
       defaultImg: defaultA,
-      activeImg: activeA
+      activeImg: activeA,
+      play: true
     },
     {
       src: As,
       id: 'audio-As',
       note: "#/b",
-      class: 'deg-260 position-As',
+      style: styles.As,
       defaultImg: defaultAs,
-      activeImg: activeAs
+      activeImg: activeAs,
+      play: true
     },
     {
       src: B,
       id: 'audio-B',
       note: "B",
-      class: 'deg-286 position-B',
+      style: styles.B,
       defaultImg: defaultB,
-      activeImg: activeB
+      activeImg: activeB,
+      play: true
     },
     {
       src: C2,
       id: 'audio-C2',
       note: "C5",
-      class: 'deg-312 position-C5',
+      style: styles.C2,
       defaultImg: defaultC5,
-      activeImg: activeC5
+      activeImg: activeC5,
+      play: true
+    },
+    {
+      src: dot,
+      id: 'littleDot',
+      note: "dot",
+      style: styles.littleDot,
+      defaultImg: dot,
+      activeImg: dot,
+      play: false
     }
   ]
 

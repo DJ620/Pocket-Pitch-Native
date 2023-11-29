@@ -26,7 +26,7 @@ const Note = ({ note }) => {
   const PlayAudio = () => {
     setActive(true);
     try {
-      sound.current.replayAsync();
+      if (note.play) sound.current.replayAsync();
     } catch (error) {}
   };
 
@@ -39,7 +39,7 @@ const Note = ({ note }) => {
 
   return (
     <TouchableOpacity
-      style={{ flex: 1 }}
+    style={!note.play ? note.style : ''}
       activeOpacity={1}
       onPressIn={PlayAudio}
       onPressOut={PauseAudio}
@@ -48,12 +48,7 @@ const Note = ({ note }) => {
       <Image
         source={active ? note.activeImg : note.defaultImg}
         resizeMode="contain"
-        style={
-          {
-            //   position: "absolute",
-            //   bottom: Dimensions.get("window").width * 0.7,
-          }
-        }
+        
       />
     </TouchableOpacity>
   );
