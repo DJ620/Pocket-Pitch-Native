@@ -7,8 +7,15 @@
     "plugins": [
       "expo-router"
     ],
-    "name": "Pocket-Pitch-React-Native",
-    "slug": "Pocket-Pitch-React-Native",
+    "name": "Pocket Pitch",
+    "slug": "Pocket Pitch",
+    "version": "1.0.0",
+    "icon": "./assets/Images/Miscellaneous/icon.png",
+    "splash": {
+      "image": "./assets/Images/Miscellaneous/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "extra": {
       "router": {
         "origin": false
@@ -23,7 +30,13 @@
     "updates": {
       "url": "https://u.expo.dev/41c7a721-0d4b-4d43-a3e3-40d6bd017acc"
     },
-    "android": {},
+    "android": {
+      "package": "com.PocketPitch",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Images/Miscellaneous/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
     "ios": {}
   }
 }

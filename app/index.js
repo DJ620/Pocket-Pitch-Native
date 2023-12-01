@@ -5,6 +5,7 @@ import {
   Dimensions,
   StyleSheet,
   Text,
+  Platform
 } from "react-native";
 import { Stack } from "expo-router";
 import Header from "../assets/Images/Miscellaneous/Header.png";
@@ -21,6 +22,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white'
   },
   header: {
+    marginTop: Platform.OS === 'android' ? 40 : 0,
     marginBottom: 80,
     alignItems: "center",
   },
