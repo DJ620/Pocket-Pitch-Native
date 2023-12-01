@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   littleDot: {
     flex: 1,
     top: 3,
-    right: 23
+    right: 25
   }
 });
 

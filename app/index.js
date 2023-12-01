@@ -12,13 +12,21 @@ import allNotes from "../assets/AllNotes";
 import Note from "../components/note";
 
 const HeaderPic = () => {
-  return <Image source={Header} resizeMode="contain" />;
+  return <Image source={Header} resizeMode="contain" style={styles.headerImg} />;
 };  
 
 const styles = StyleSheet.create({
+  page: {
+    flex: 1,
+    backgroundColor: 'white'
+  },
   header: {
     marginBottom: 80,
     alignItems: "center",
+  },
+  headerImg: {
+    height: 36,
+    width: 152
   },
   notesContainer: {
     borderRadius:
@@ -29,8 +37,6 @@ const styles = StyleSheet.create({
     height: Dimensions.get("window").width * 0.8,
     maxWidth: 250,
     maxHeight: 250,
-    // borderWidth: 0.5,
-    // borderColor: "red",
     justifyContent: "center",
     alignItems: "center",
     margin: "0 auto",
@@ -50,7 +56,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     transform: [{ rotate: '-74deg'}],
-    marginTop: 148
+    marginTop: 175
   },
   circleItem: {
     position: 'absolute',
@@ -66,8 +72,8 @@ const Home = () => {
     
         return allNotes.map((note, index) => {
           const angle = (2 * Math.PI * index) / numberOfItems;
-          const x = 120 * Math.cos(angle); // Adjust the radius as needed
-          const y = 120 * Math.sin(angle); // Adjust the radius as needed
+          const x = 135 * Math.cos(angle); // Adjust the radius as needed
+          const y = 135 * Math.sin(angle); // Adjust the radius as needed
     
           return (
             <View
@@ -90,7 +96,7 @@ const Home = () => {
       };
 
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={styles.page}>
       <Stack.Screen
         options={{
           headerShown: false,
@@ -108,9 +114,6 @@ const Home = () => {
         <View style={styles.circleContainer}>
             {renderCircleItems()}
         </View>
-      </View>
-      <View style={styles.footerContainer}>
-        <Text style={styles.footer}>&copy; 2015 John Walbolt</Text>
       </View>
     </SafeAreaView>
   );

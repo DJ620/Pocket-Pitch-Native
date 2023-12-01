@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { TouchableOpacity, Image } from "react-native";
+import { TouchableOpacity, Image, StyleSheet } from "react-native";
 import { Audio } from "expo-av";
 
 const Note = ({ note }) => {
@@ -37,6 +37,13 @@ const Note = ({ note }) => {
     } catch (error) {}
   };
 
+  const styles = StyleSheet.create({
+    size: {
+      height: note.play ? 55 : 10,
+      width: note.play ? 55 : 10
+    }
+  })
+
   return (
     <TouchableOpacity
     style={!note.play ? note.style : ''}
@@ -48,6 +55,7 @@ const Note = ({ note }) => {
       <Image
         source={active ? note.activeImg : note.defaultImg}
         resizeMode="contain"
+        style={styles.size}
         
       />
     </TouchableOpacity>

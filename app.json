@@ -8,6 +8,22 @@
       "expo-router"
     ],
     "name": "Pocket-Pitch-React-Native",
-    "slug": "Pocket-Pitch-React-Native"
+    "slug": "Pocket-Pitch-React-Native",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "41c7a721-0d4b-4d43-a3e3-40d6bd017acc"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/41c7a721-0d4b-4d43-a3e3-40d6bd017acc"
+    },
+    "android": {},
+    "ios": {}
   }
 }
