@@ -1,14 +1,16 @@
-# Expo Router Example
+# Pocket Pitch (React Native Version)
 
-Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
+##  Description
 
-## 🚀 How to use
+Pocket pitch is a native application that mimics the functionality of a pitch pipe right on your phone!
 
-```sh
-npx create-expo-app -e with-router
-```
+## Technologies Used
 
-## 📝 Notes
+* React Native
+* Expo
 
-- [Expo Router: Docs](https://expo.github.io/router)
-- [Expo Router: Repo](https://github.com/expo/router)
+## Credits
+
+This version of Pocket Pitch was built by Daniel Hersh.
+Pocket Pitch is owned, operated, and designed by John Walbolt.
+https://www.pocketpitch.io
